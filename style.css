@@ -5,35 +5,145 @@
 }
 
 body{
-  background-image: url('img/legno.jpg');
+  background-image: url('img/legno1.jpg');
   background-color: #987b62;
   background-size: cover;
 }
 
 .container{
-  background-color: rgba(255, 0, 0, 0.5);
-  width: 80%;
+  width: 800px;
   margin: auto;
+  margin-top: 20px;
+  font-family: 'Montserrat', sans-serif;
 }
+
+/* HEADER */
 
 header{
-
+  width: 100%;
+  background-color: white;
 }
+
+header > img{
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+}
+
+/* NAVBAR */
 
 nav{
   width: 100%;
   height: 40px;
-  background-color: #514643;
-  margin-bottom: 10px;
+  background-color: #504741;
+  margin-bottom: 20px;
 }
+
+.navbar > ul{
+  text-align: center;
+  line-height: 40px;
+}
+
+.navbar li{
+  display: inline-block;
+}
+
+.navbar a{
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.text_row > button:hover, nav li:hover{
+  background-color: #302b27;
+}
+
+/* MAIN */
 
 main > .left, main > .center, main > .right{
   float: left;
-  width: 30%
+  width: 32%;
+  background: white;
+}
+
+main .center{
+  margin-left: 2%;
+  margin-right: 2%;
 }
 
 main::after{
   clear: both;
   content: '';
   display: table;
+}
+
+.img_row{
+  width: 100%;
+}
+
+.text_row{
+  padding: 15px ;
+  text-align: center;
+}
+
+.text_row > h4{
+  font-weight: lighter;
+  text-shadow: 1px 1px 3px black;
+}
+
+.text_row > p{
+  text-align: left;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-weight: 300;
+  font-size: 12px;
+  padding: 2px;
+}
+
+.text_row > button{
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+  background: #504741;
+  color: white;
+}
+
+.border{
+  border-radius: 3px;
+  border-radius: none;
+}
+
+/* FOOTER */
+
+footer{
+  margin-top: 20px;
+  width: 100%;
+  background-color: #504741;
+  color: white;
+}
+
+.container_footer{
+  padding: 15px;
+}
+
+.container_footer > h2{
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.bottom_social {
+  text-align: right;
+  font-size: 30px;
+}
+
+.bottom_social > i{
+  margin-left: 20px;
+}
+
+.text_footer{
+  width: 70%;
+  font-weight: 300;
 }
